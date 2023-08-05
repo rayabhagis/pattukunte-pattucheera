@@ -28,12 +28,11 @@ const NextGameTimer = () => {
     return todayInUTC;
   }
   return (
-    <div className="timer">
+    <div className="text-center text-primary dark:text-secondary">
       <span>Next Movie in</span>
       <div>
-        <span className="counter">{diff.hours} hrs</span>:
-        <span className="counter">{diff.minutes} mins</span>:
-        <span className="counter"> {diff.seconds} secs</span>
+        <span>{diff.hours} hrs</span> :<span> {diff.minutes} mins</span> :
+        <span> {diff.seconds} secs</span>
       </div>
     </div>
   );
